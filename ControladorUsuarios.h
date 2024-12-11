@@ -3,6 +3,7 @@
 
 using namespace std;
 #include "ColeccionesG/ICollection.h"
+#include "ColeccionesG/Lista.h"
 #include "Usuarios.h"
 #include "string"
 
@@ -21,8 +22,10 @@ public:
     void confirmar();
     void cancelar();
     void eliminarAsignatura();
-    ICollection* Listarusuario();
+    ICollection *listarusuario();
+    void MostrarUsuarios(IDictionary*);
 };
 
 
 #endif /* CONTROLADORUSUARIOS_H */
+

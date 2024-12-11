@@ -4,7 +4,11 @@
 using namespace std;
 #include "ColeccionesG/ICollection.h"
 #include "ColeccionesG/IDictionary.h"
+#include "ColeccionesG/ListaDicc.h"
+#include "ColeccionesG/Lista.h"
+#include "ColeccionesG/KeyString.h"
 #include "Usuarios.h"
+#include "Asignaturas.h"
 #include "string"
 
 class Estudiantes: public Usuarios{
@@ -16,7 +20,8 @@ public:
     string getCedula();
     float asistenciaClaseVivo();
     void finalizaciónAsistenciaVivo();
-    void inscripcionAsignatura();
+    void inscripcionAsignatura(IDictionary*);
 };
 
 #endif /* ESTUDIANTES_H */
+
